@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Love Site</title>
+
+<style>
+:root{
+    --letter-love: 250px;
+    --letter: rgba(255,192,203,0.85);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family: Arial, sans-serif;
+}
+
+/* VIDEO DE FUNDO */
+video{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-1;
+}
+
+/* CAIXA CENTRAL */
+.Love_You{
+    position: relative;
+    width: 90%;
+    max-width: 500px;
+    min-height: var(--letter-love);
+    background: var(--letter);
+    color: black;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 30px pink;
+    padding:20px;
+    text-align:center;
+}
+
+/* GIF */
+.Love_You img{
+    width:200px;
+    margin-bottom:15px;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Animação suave */
+@keyframes float{
+    0%{ transform: translateY(0px); }
+    50%{ transform: translateY(-10px); }
+    100%{ transform: translateY(0px); }
+}
+</style>
+
+</head>
+<body>
+
+<video autoplay muted loop>
+    <source src="Download.mp4" type="video/mp4">
+</video>
+
+<div class="Love_You">
+    <img src="data:image/gif;base64,AAAA...."
+ alt="Gatinhos fofos">
+    <h2>Eu te amo Victoria ❤️</h2>
+</div>
+
+</body>
+</html>
+
+
+
+
